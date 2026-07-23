@@ -1,7 +1,24 @@
 aid: ateios
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ateios.png
 name: Ateios
-description: Ateios is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Ateios Systems is an Indianapolis-based advanced battery manufacturer that produces high-energy,
+  recyclable, PFA-free battery electrodes for global battery makers. Its proprietary RaiCure platform is a
+  solvent-free, cure-on-command coating process using energy-curable polymers instead of solvent-based thermal
+  drying, enabling thicker electrodes (>10 mAh/cm2), higher energy density, and roughly 5x faster coating
+  throughput at lower cost and emissions. Ateios targets medical device, IoT, mobility, and defense markets.
+  Founded in 2017 and backed by Techstars, TitletownTech, Good Growth Capital and others, the company is a
+  materials/hardware manufacturer and publishes no developer API, SDK, or programmatic developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/ateios/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Batteries
+- Energy Storage
+- Battery Materials
+- Manufacturing
+- Cleantech
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ateios-domain-security.yml
 - type: Website
   url: https://ateios.com/
+- type: Blog
+  url: https://ateios.com/news
+- type: Support
+  url: https://ateios.com/contact
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
